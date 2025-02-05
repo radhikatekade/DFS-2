@@ -5,6 +5,7 @@
 # the matrix, then everytime "1" is found, append the number of islands, run dfs on it, 
 # add new locations in visited. Finally return the num of islands.
 
+from typing import List
 from queue import Queue
 class Solution:
     def numIslands(self, grid: List[List[str]]) -> int:
