@@ -2,8 +2,8 @@
 # Space complexity - O(min(m, n))
 
 # Approach - bfs - A little bit different approach, need to maintain a visisted set, run a for loop first on
-# the matrix, then everytime "1" is found, append the number of islands, run dfs on it, 
-# add new locations in visited. Finally return the num of islands.
+# the matrix, then everytime "1" is found, create a queue, run a bfs on it. Finally outside the while 
+# loop, append the number of islands. Finally return the num of islands.
 
 from typing import List
 from queue import Queue
