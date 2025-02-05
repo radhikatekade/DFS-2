@@ -1,9 +1,9 @@
 # Time complexity - O(m * n)
-# Space complexity - O(m * n)
+# Space complexity - O(min(m, n))
 
 # Approach - bfs - A little bit different approach, need to maintain a visisted set, run a for loop first on
-# the matrix, then everytime "1" is found, start a new queue, run bfs on it, add new locations in visited 
-# and queue. Outside of while loop, append the number of islands. Finally return the num of islands.
+# the matrix, then everytime "1" is found, append the number of islands, run dfs on it, 
+# add new locations in visited. Finally return the num of islands.
 
 from typing import List
 from queue import Queue
@@ -34,6 +34,4 @@ class Solution:
                                 q.put((nr, nc))
                                 visited.add((nr, nc))
                     islands += 1
-
-        
         return islands
